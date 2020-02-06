@@ -30,7 +30,7 @@ pip는 윈도우10 + 기본 설치일 경우 `C:\Users\윈도우유저명\AppDat
 > pip install beautifulsoup4
 ```
 
-이 후 다음처럼 프로그램 파일을 작성한다:
+이 후 다음처럼 작성한다:
 
 ```py
 from bs4 import BeautifulSoup
@@ -43,11 +43,11 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 
 ## 프로그램 파일 작성
 
-파이썬 설치 시 딸려오는 IDLE 편집기를 사용하거나 직접 프로그램 파일을 작성한다. 파이썬 파일의 확장명은 보통 `py`로 한다.
+파이썬 설치 시 딸려오는 IDLE 편집기를 사용하거나 별도의 에디터로 직접 작성한다. 파이썬 파일의 확장명은 보통 `py`로 한다.
 
 ## 프로그램 파일 실행
 
-파일이 있는 경로에서 `py`로 실행한다:
+파일이 있는 경로에서 `py`로 실행:
 
 ```py
 > py test.py
