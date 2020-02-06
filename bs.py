@@ -7,8 +7,5 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 
 subjects = soup.select('.item-subject')  #게시글 클래스 선택
 for subject in subjects:
-##    print(subject.select_one('.item-subject').text)
-    print(subject.text)
-
-##print(soup.get_text())
-
+##    print(subject.text)
+    print(subject.select_one('span.wr-new').next_sibling)
