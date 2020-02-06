@@ -43,7 +43,7 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 
 ## 프로그램 파일 작성
 
-파이썬 설치 시 딸려오는 IDLE 편집기를 사용하거나 별도의 에디터로 직접 작성한다. 파이썬 파일의 확장명은 보통 `py`로 한다.
+파이썬 설치 시 딸려오는 IDLE 편집기를 사용하거나 별도의 에디터로 직접 작성한다. 확장명은 `py`.
 
 ## 프로그램 파일 실행
 
@@ -53,4 +53,4 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 > py test.py
 ```
 
-IDLE 편집기로 파일을 열고 있는 상태라면 `f5`로 즉시 실행할 수 있다.
+IDLE 편집기로 편집 중인 파일은 `f5`로 즉시 실행할 수 있다.
