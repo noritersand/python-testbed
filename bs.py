@@ -8,4 +8,9 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 subjects = soup.select('.item-subject')  #게시글 클래스 선택
 for subject in subjects:
 ##    print(subject.text)
-    print(subject.select_one('span.wr-new').next_sibling)
+##    print(type(subject.select_one('span.wr-new')))
+##    print(type(subject.select_one('span.wr-newasd')))
+##    print(subject.select_one('span.wr-new') is str)
+    if subject.select_one('span.wr-new') is not None:
+        print(subject.select_one('span.wr-new').next_sibling)
+
