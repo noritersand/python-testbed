@@ -11,6 +11,4 @@ for subject in subjects:
 ##    print(type(subject.select_one('span.wr-new')))
 ##    print(type(subject.select_one('span.wr-newasd')))
 ##    print(subject.select_one('span.wr-new') is str)
-    if subject.select_one('span.wr-new') is not None:
-        print(subject.select_one('span.wr-new').next_sibling)
-
+    print(subject.select_one('span.wr-new')['class'])
