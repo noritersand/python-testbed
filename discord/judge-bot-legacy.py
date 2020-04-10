@@ -19,13 +19,15 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    channel = message.channel
     if message.channel.id == channelIds['bot-test']:
-        if message.content.startswith("!안녕"):
-            lastWord = await channel.send("안녕하세요.")
-        elif message.content != lastWord:
-            print(message.content)
-            lastWord = await channel.send("정숙해 주시기 바람미따")
+        # 투표
+        if message.content.startswith("!투표"):
+            vote = message.content[4:].split("/")
+            channel = message.channel
+            await channel.send("투표를 시작함미따")
+            for i in range(0, len(vote)):
+                lastsend = await channel.send("```" + vote[i] + "```")
+                await lastsend.add_reaction('👍')
 
 client.run("Njk3MjUyNjA0NTg1MTgxMjQ0.Xo0lYw.007BhwgNGc5-_6f44P8EtXgkIho")
 
