@@ -19,13 +19,24 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    channel = message.channel
-    if message.channel.id == channelIds['bot-test']:
+    if not message.author.bot and message.channel.id == channelIds['bot-test']:
         if message.content.startswith("!안녕"):
-            lastWord = await channel.send("안녕하세요.")
-        elif message.content != lastWord:
-            print(message.content)
-            lastWord = await channel.send("정숙해 주시기 바람미따")
+            await message.channel.send("안녕하세요.")
+        else:
+            print(message)
+            print(message.author)
+            print(message.channel)
+        
+
+
+# def executeCommand(message):
+#     if message.content.startswith("!안녕"):
+#         await message.channel.send("안녕하세요.")
+
+# def react(message):
+#     print(message)
+#     print(message.author)
+#     print(message.channel)
 
 client.run("Njk3MjUyNjA0NTg1MTgxMjQ0.Xo0lYw.007BhwgNGc5-_6f44P8EtXgkIho")
 
