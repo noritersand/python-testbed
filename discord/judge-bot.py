@@ -23,6 +23,7 @@ async def on_message(message):
         if message.content.startswith("!안녕"):
             await message.channel.send("안녕하세요.")
         else:
+            await message.channel.send("정숙해 주시기 바람미따.")
             print(message)
             print(message.author)
             print(message.channel)
