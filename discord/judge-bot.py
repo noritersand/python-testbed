@@ -39,5 +39,5 @@ async def on_message(message):
 #     print(message.author)
 #     print(message.channel)
 
-client.run("Njk3MjUyNjA0NTg1MTgxMjQ0.Xo0lYw.007BhwgNGc5-_6f44P8EtXgkIho")
+client.run("newtokenmustbehere")
 
