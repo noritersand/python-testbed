@@ -10,8 +10,8 @@ soup = BeautifulSoup(html, 'html.parser')
 address = soup.find_all(class_='absolute-link product-link')
 
 for i in address:
-  print(i.attrs['href'])
-  print()
+    print(i.attrs['href'])
+    print()
 
 # GET /search?kw=21st%20century HTTP/3
 # Host: kr.iherb.com
