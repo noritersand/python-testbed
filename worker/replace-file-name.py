@@ -1,4 +1,3 @@
-from fileinput import filename
 import os
 
 folder = "c:/dev/repo/python-lab/hashcode/"
