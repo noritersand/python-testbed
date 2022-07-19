@@ -1,9 +1,9 @@
 import os
 
-folder = "c:/dev/temp/"
+sourceDir = "c:/dev/temp/"
 
-for fileName in os.listdir(folder):
-    source = folder + fileName
+for fileName in os.listdir(sourceDir):
+    source = sourceDir + fileName
     print(source)
 
     # 파일명에서 hashcode 제거하기
@@ -16,7 +16,7 @@ for fileName in os.listdir(folder):
     # 언더바를 하이픈으로
     newFileName = fileName.replace('_', '-')
     print(newFileName)
-    destination = folder + newFileName
+    destination = sourceDir + newFileName
     os.rename(source, destination)
     
 # print(os.listdir(folder))
